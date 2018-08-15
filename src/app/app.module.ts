@@ -3,24 +3,37 @@ import { CoursesComponent } from './courses.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
-
+import { Router } from '@angular/router';
 import { AppComponent } from './app.component';
+import { AppRoutingModule }        from './app-routing.module';
 import { CourseComponent } from './course/course.component';
 import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
+import { RegisterComponent } from './register/register.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CoursesComponent,
-    CourseComponent,
-    SummaryPipe,
-    LoginComponent
+	//CoursesComponent,
+   // CourseComponent,
+   // SummaryPipe,
+    LoginComponent,
+	HomeComponent,
+	RegisterComponent,
+	AboutComponent
   ],
   imports: [
     BrowserModule,
+	AppRoutingModule,
     FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  // Diagnostic only: inspect router configuration
+  constructor(router: Router) {
+    console.log('Routes: ', JSON.stringify(router.config, undefined, 2));
+  }
+}
