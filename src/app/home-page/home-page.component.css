@@ -24,6 +24,25 @@
     box-shadow: 0 0 black;
     padding-top: 15px;
 }
+.lg-btn{
+    background: #fff;
+    border-radius: 15px !important;
+    color: #000;
+    font-size: 20px !important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700 !important;
+    padding:10px 30px !important;
+}
+.rg-btn{
+    background: #bff201;
+    border-radius: 15px !important;
+    color: #000;
+    font-size: 20px !important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700 !important;
+    padding:10px 30px !important;
+    margin-left: 15px;
+}
 #myCarousel .carousel-item a{background:#F47735; font-size:14px; color:#FFF; padding:13px 32px; display:inline-block; }
 #myCarousel .carousel-item a:hover{background:#394fa2; text-decoration:none;  }
 #myCarousel{position:relative; z-index:1;  }
@@ -59,9 +78,4 @@
     padding: 13px 30px;
     font-size: 20px;
     color: #bff201;
-}
-@media(min-width:320px)and (max-width:767px){
-    .tennis-col{
-        display: none;
-    }
 }
